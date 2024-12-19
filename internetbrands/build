@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+set -x
+
+docker build -t ${INTERNETBRANDS_IMAGE_NAME}:${INTERNETBRANDS_IMAGE_TAG} .

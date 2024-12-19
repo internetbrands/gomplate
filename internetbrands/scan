@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+set -x
+
+trivy image ${INTERNETBRANDS_IMAGE_NAME}:${INTERNETBRANDS_IMAGE_TAG} \
+  --scanners vuln \
+  --severity HIGH,CRITICAL
